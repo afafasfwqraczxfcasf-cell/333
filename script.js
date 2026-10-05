@@ -110,22 +110,22 @@
     var programas = {
       bebe: {
         t: 'Matronatación, en la sede El Buque',
-        d: 'Para bebés de 6 a 30 meses, con mamá o papá dentro del agua. Se trabaja adaptación, flotación asistida y estimulación motriz en sesiones de 30 minutos.',
+        d: 'De Caracoles a Ballenas, de 6 a 36 meses, en El Buque. El acompañamiento evoluciona con la autonomía del niño. Al completar Ballenas se gradúa y continúa desde Delfín en Vanguardia.',
         m: 'Hola Diyer, tengo un bebé y me interesa la matronatación en la sede El Buque. ¿Qué horarios y cupos hay?'
       },
       ninoMiedo: {
-        t: 'Clases para niños, empezando por Ambientación',
-        d: 'El primer nivel de la ruta: entrar al agua sin miedo, mojarse la cara, soplar burbujas y soltarse del borde. Todo en formato de juego.',
-        m: 'Hola Diyer, mi hijo/a le tiene miedo al agua y quiero empezar en el nivel de ambientación. ¿Qué horarios tienen?'
+        t: 'Clases para niños, adaptación al agua',
+        d: 'El profesor orienta el ingreso según la edad y el manejo del agua. De Caracoles a Ballenas se cursa en El Buque; Delfín, Tiburón y Pingüino, en Vanguardia.',
+        m: 'Hola Diyer, mi hijo/a le tiene miedo al agua y quiero orientación sobre el nivel y la sede que le corresponden. ¿Qué horarios tienen?'
       },
       ninoAprender: {
         t: 'Clases para niños, ruta completa',
-        d: 'Arranca en el nivel que le corresponda y avanza por propulsión, respiración y técnica. Clases de 30 a 45 minutos según la edad.',
+        d: 'Diez niveles, desde Caracoles hasta Pingüino. Hasta Ballenas se aprende en El Buque; tras graduarse, se continúa desde Delfín en Vanguardia. Te orientamos según la edad y el avance.',
         m: 'Hola Diyer, quiero que mi hijo/a aprenda a nadar. ¿Cómo hago para que lo evalúen y saber en qué nivel va?'
       },
       ninoTecnica: {
-        t: 'Clases para niños, nivel Técnica',
-        d: 'Para quien ya se desplaza solo: los cuatro estilos, viradas, distancia y disciplina deportiva.',
+        t: 'Clases para niños, técnica en Vanguardia',
+        d: 'En Vanguardia, Delfín trabaja respiración al frente y patada de libre y espalda; Tiburón corrige estilos e inicia respiración lateral; Pingüino desarrolla los cuatro estilos y el preentrenamiento.',
         m: 'Hola Diyer, mi hijo/a ya nada y quiero que mejore técnica y estilos. ¿Qué grupo le corresponde?'
       },
       adultoCero: {
@@ -206,6 +206,24 @@
       }
     });
   }
+
+  /* ---------- Flechas de los carruseles (programas / testimonios) ---------- */
+  var mapaCarruseles = { prog: 'carrusel-prog', test: 'carrusel-test' };
+
+  function desplazar(id, direccion) {
+    var pista = document.getElementById(id);
+    if (!pista) return;
+    var tarjeta = pista.querySelector(':scope > *');
+    var ancho = tarjeta ? tarjeta.getBoundingClientRect().width + 18 : pista.clientWidth * 0.8;
+    pista.scrollBy({ left: ancho * direccion, behavior: 'smooth' });
+  }
+
+  document.querySelectorAll('[data-carrusel-prev]').forEach(function (b) {
+    b.addEventListener('click', function () { desplazar(mapaCarruseles[b.dataset.carruselPrev], -1); });
+  });
+  document.querySelectorAll('[data-carrusel-next]').forEach(function (b) {
+    b.addEventListener('click', function () { desplazar(mapaCarruseles[b.dataset.carruselNext], 1); });
+  });
 
   /* ---------- Año del pie ---------- */
   var anio = document.getElementById('anio');

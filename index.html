@@ -63,6 +63,7 @@
       <a href="#programas">Programas</a>
       <a href="#ruta">Niveles</a>
       <a href="#sedes">Sedes</a>
+      <a href="#testimonios">Testimonios</a>
       <a href="#tarifas">Tarifas</a>
       <a href="#faq">Preguntas</a>
       <a href="#contacto">Contacto</a>
@@ -173,27 +174,36 @@
   <!-- ══════════ PROGRAMAS ══════════ -->
   <section class="programas" id="programas">
     <div class="caja">
-      <h2 class="titulo">Un programa para cada edad.</h2>
-      <p class="bajada">Cinco líneas de formación. Si no sabes cuál les corresponde, más abajo hay una guía de dos preguntas.</p>
+      <div class="seccion__cab">
+        <div>
+          <h2 class="titulo">Un programa para cada edad.</h2>
+          <p class="bajada">Cinco líneas de formación. Si no sabes cuál les corresponde, más abajo hay una guía de dos preguntas.</p>
+        </div>
+        <div class="carrusel__controles">
+          <span class="desliza">Desliza <svg class="ic" aria-hidden="true"><use href="#i-flecha"></use></svg></span>
+          <button type="button" class="flecha" data-carrusel-prev="prog" aria-label="Programa anterior"><svg class="ic" aria-hidden="true"><use href="#i-flecha"></use></svg></button>
+          <button type="button" class="flecha flecha--sig" data-carrusel-next="prog" aria-label="Siguiente programa"><svg class="ic" aria-hidden="true"><use href="#i-flecha"></use></svg></button>
+        </div>
+      </div>
 
-      <div class="rejilla-prog">
+      <div class="rejilla-prog" id="carrusel-prog">
         <article class="prog prog--destacado">
-          <span class="etiqueta">6 a 30 meses</span>
+          <span class="etiqueta">6 a 36 meses</span>
           <img src="assets/medusa.webp" alt="" width="420" height="420" loading="lazy">
           <h3>Matronatación</h3>
-          <p>Mamá o papá entran al agua. Trabajamos adaptación, flotación asistida, apneas cortas y estimulación motriz. Es tanto un programa de natación como un espacio de vínculo, y es el corazón de la sede El Buque.</p>
+          <p>De Caracoles a Ballenas en la sede El Buque. Comienzan con mamá o papá en el agua y desarrollan adaptación, flotación y autonomía de forma progresiva. Al completar Ballenas, se gradúan y continúan en Vanguardia.</p>
           <ul class="chulos">
-            <li><svg class="ic" aria-hidden="true"><use href="#i-check"></use></svg>Con acompañante en el agua</li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"></use></svg>Acompañamiento según la etapa</li>
             <li><svg class="ic" aria-hidden="true"><use href="#i-check"></use></svg>Sesiones de 30 minutos</li>
           </ul>
           <a class="enlace" href="https://wa.me/573108731095?text=Hola%20Diyer%2C%20me%20interesa%20la%20matronataci%C3%B3n%20para%20mi%20beb%C3%A9.%20%C2%BFHay%20cupos%3F" target="_blank" rel="noopener">Preguntar por cupos</a>
         </article>
 
         <article class="prog">
-          <span class="etiqueta">Desde 1 año</span>
+          <span class="etiqueta">Desde los 3 años · Vanguardia</span>
           <img src="assets/tortuga.webp" alt="" width="420" height="420" loading="lazy">
           <h3>Niños y niñas</h3>
-          <p>La ruta completa: seguridad, respiración, flotación, desplazamiento y los cuatro estilos, siempre en formato de juego.</p>
+          <p>En Vanguardia continúan con Delfín (3 a 5 años), Tiburón (5 a 7 años) y Pingüino (8 años en adelante): respiración, técnica de los estilos y preentrenamiento.</p>
           <a class="enlace" href="https://wa.me/573108731095?text=Hola%20Diyer%2C%20quiero%20informaci%C3%B3n%20de%20las%20clases%20para%20ni%C3%B1os." target="_blank" rel="noopener">Ver horarios</a>
         </article>
 
@@ -228,35 +238,129 @@
   <section class="ruta" id="ruta">
     <div class="ruta__fondo" aria-hidden="true"><span class="ruta__luz"></span></div>
     <div class="caja">
-      <h2 class="titulo titulo--claro">La ruta Diyer, de la orilla a lo hondo.</h2>
-      <p class="bajada bajada--clara">Cuatro niveles infantiles. Nadie pasa al siguiente por edad ni por tiempo: se pasa cuando el anterior está resuelto.</p>
+      <h2 class="titulo titulo--claro">La ruta Diyer, de Caracoles a Pingüino.</h2>
+      <p class="bajada bajada--clara">Diez niveles con edades y objetivos para acompañar cada etapa del aprendizaje.</p>
 
-      <ol class="niveles">
-        <li class="nivel" style="--i:0">
-          <span class="nivel__prof">0,60 m</span>
-          <img src="assets/estrella.webp" alt="Estrella de mar, mascota del nivel Ambientación" width="420" height="420" loading="lazy">
-          <h3>Ambientación</h3>
-          <p>Entrar sin llorar, mojarse la cara, soplar burbujas y soltarse del borde.</p>
+      <div class="ruta__etapa">
+        <h3 class="ruta__sede">Sede El Buque · 6 a 36 meses</h3>
+        <p class="ruta__descripcion">De Caracoles a Ballenas: adaptación al agua y desarrollo progresivo de la autonomía.</p>
+        <ol class="niveles">
+        <li class="nivel">
+          <span class="nivel__edad">6 a 8 meses</span>
+          <span class="nivel__mascota" aria-hidden="true">🐌</span>
+          <h3>Caracoles</h3>
+          <ul class="nivel__objetivos">
+            <li>Ingresa a la piscina tranquilo con su acompañante.</li>
+            <li>Realiza inmersiones cortas.</li>
+            <li>Experimenta movimientos de sus extremidades de manera refleja.</li>
+          </ul>
         </li>
-        <li class="nivel" style="--i:1">
-          <span class="nivel__prof">0,90 m</span>
-          <img src="assets/caballodelmar.webp" alt="Caballito de mar, mascota del nivel Propulsión" width="420" height="420" loading="lazy">
-          <h3>Propulsión</h3>
-          <p>Patada sostenida, deslizamientos y control del cuerpo en el agua.</p>
+        <li class="nivel">
+          <span class="nivel__edad">9 a 11 meses</span>
+          <img src="assets/tortuga.webp" alt="" width="420" height="420" loading="lazy">
+          <h3>Tortugas</h3>
+          <ul class="nivel__objetivos">
+            <li>Se sostiene solo del borde por 5 segundos o más.</li>
+            <li>Realiza inmersiones atrapando objetos bajo el agua.</li>
+            <li>Experimenta flotación dorsal con ayuda.</li>
+          </ul>
         </li>
-        <li class="nivel" style="--i:2">
-          <span class="nivel__prof">1,20 m</span>
-          <img src="assets/pulpo.webp" alt="Pulpo, mascota del nivel Respiración" width="420" height="420" loading="lazy">
-          <h3>Respiración</h3>
-          <p>Coordinar brazada y aire, girar la cabeza y nadar sin parar a tomar impulso.</p>
+        <li class="nivel">
+          <span class="nivel__edad">12 a 14 meses</span>
+          <img src="assets/medusa.webp" alt="" width="420" height="420" loading="lazy">
+          <h3>Medusas</h3>
+          <ul class="nivel__objetivos">
+            <li>Ingresa al agua saltando desde sentado en el borde.</li>
+            <li>Realiza inmersiones largas y profundas.</li>
+            <li>Experimenta la flotación y pequeños desplazamientos con ayuda de elementos (colchoneta y gusanos).</li>
+          </ul>
         </li>
-        <li class="nivel" style="--i:3">
-          <span class="nivel__prof">1,50 m</span>
-          <img src="assets/ballena.webp" alt="Ballena, mascota del nivel Técnica" width="420" height="420" loading="lazy">
-          <h3>Técnica</h3>
-          <p>Los cuatro estilos, viradas, distancia y disciplina deportiva.</p>
+        <li class="nivel">
+          <span class="nivel__edad">15 a 18 meses</span>
+          <img src="assets/estrella.webp" alt="" width="420" height="420" loading="lazy">
+          <h3>Estrellas de mar</h3>
+          <ul class="nivel__objetivos">
+            <li>Inicia el proceso de independencia e ingresa ocasionalmente sin acompañante al agua por periodos cortos de tiempo.</li>
+            <li>Realiza desplazamientos cortos y autónomos.</li>
+            <li>Hace burbujas por la boca, sin realizar inmersión total de la cara.</li>
+          </ul>
         </li>
-      </ol>
+        <li class="nivel">
+          <span class="nivel__edad">19 a 24 meses</span>
+          <img src="assets/caballodelmar.webp" alt="" width="420" height="420" loading="lazy">
+          <h3>Caballos de mar</h3>
+          <ul class="nivel__objetivos">
+            <li>Ejecuta saltos desde el borde, regresando solo al muro con desplazamientos autónomos.</li>
+            <li>Experimenta situaciones de equilibrio y control corporal (pasar el puente, montar a caballo).</li>
+            <li>Hace burbujas, haciendo inmersión total de la cabeza.</li>
+          </ul>
+        </li>
+        <li class="nivel">
+          <span class="nivel__edad">25 a 27 meses</span>
+          <img src="assets/pulpo.webp" alt="" width="420" height="420" loading="lazy">
+          <h3>Pulpos</h3>
+          <ul class="nivel__objetivos">
+            <li>Realiza desplazamientos sin ayuda por 4 metros.</li>
+            <li>Inicia su proceso de respiración, realizando burbujas mientras va nadando.</li>
+            <li>Experimenta flotación en espalda sin apoyo, por periodos cortos de tiempo.</li>
+          </ul>
+        </li>
+        <li class="nivel">
+          <span class="nivel__edad">28 a 36 meses</span>
+          <img src="assets/ballena.webp" alt="" width="420" height="420" loading="lazy">
+          <h3>Ballenas</h3>
+          <ul class="nivel__objetivos">
+            <li>Desplazamientos respirando al frente por 6 metros.</li>
+            <li>Ejecuta saltos con seguridad desde el borde.</li>
+            <li>Flota en espalda sin apoyo, por más de 10 segundos.</li>
+            <li>Inmersiones profundas y apneas largas con ayuda.</li>
+          </ul>
+        </li>
+        </ol>
+      </div>
+
+      <div class="ruta__graduacion">
+        <h3>¡De Ballenas a Vanguardia!</h3>
+        <p>Al completar Ballenas, los niños se gradúan de la sede El Buque y continúan su proceso en la sede Vanguardia, desde el nivel Delfín.</p>
+      </div>
+
+      <div class="ruta__etapa">
+        <h3 class="ruta__sede">Sede Vanguardia · desde los 3 años</h3>
+        <p class="ruta__descripcion">Delfín, Tiburón y Pingüino: técnica de los estilos y preparación para el preentrenamiento.</p>
+        <ol class="niveles" start="8">
+        <li class="nivel">
+          <span class="nivel__edad">3 a 5 años</span>
+          <span class="nivel__mascota" aria-hidden="true">🐬</span>
+          <h3>Delfín</h3>
+          <ul class="nivel__objetivos">
+            <li>Respiraciones al frente.</li>
+            <li>Realiza adecuadamente patada de libre y espalda.</li>
+            <li>Entradas al agua en fase inicial de clavado.</li>
+            <li>Inmersiones sin ayuda.</li>
+          </ul>
+        </li>
+        <li class="nivel">
+          <span class="nivel__edad">5 a 7 años</span>
+          <span class="nivel__mascota" aria-hidden="true">🦈</span>
+          <h3>Tiburón</h3>
+          <ul class="nivel__objetivos">
+            <li>Ingresa al agua en clavado desde el borde.</li>
+            <li>Corrección de estilos completos con brazada y patada (libre y espalda) y ajuste de la patada de pecho.</li>
+            <li>Inicio del trabajo de respiraciones al lado.</li>
+          </ul>
+        </li>
+        <li class="nivel">
+          <span class="nivel__edad">8 años en adelante</span>
+          <img src="assets/pinguino.webp" alt="" width="420" height="420" loading="lazy">
+          <h3>Pingüino</h3>
+          <ul class="nivel__objetivos">
+            <li>Inicia su proceso de preentrenamiento y maneja los múltiples elementos de la técnica de los 4 estilos.</li>
+            <li>Desarrolla sus capacidades físicas y motoras.</li>
+            <li>Inicia su participación en festivales y torneos locales manejando los 4 estilos de la natación.</li>
+          </ul>
+        </li>
+        </ol>
+      </div>
     </div>
   </section>
 
@@ -273,7 +377,7 @@
           <p class="paso__num">Pregunta 1 de 2</p>
           <h3 class="paso__p">¿Quién va a tomar las clases?</h3>
           <div class="opciones">
-            <button type="button" data-quien="bebe">Un bebé de 6 a 30 meses</button>
+            <button type="button" data-quien="bebe">Un bebé de 6 a 36 meses</button>
             <button type="button" data-quien="nino">Un niño o niña</button>
             <button type="button" data-quien="adulto">Un joven o adulto</button>
             <button type="button" data-quien="grupo">Un colegio o grupo</button>
@@ -317,13 +421,13 @@
         <article class="sede">
           <div class="sede__azulejo" aria-hidden="true"></div>
           <h3>El Buque</h3>
-          <p class="sede__rol">La piscina de los bebés</p>
-          <p>Sede principal, dedicada sobre todo a matronatación y a los primeros meses de adaptación al agua. Ambiente tranquilo y grupos muy pequeños.</p>
+          <p class="sede__rol">De Caracoles a Ballenas</p>
+          <p>Aquí se cursan los siete primeros niveles, de Caracoles a Ballenas, entre los 6 y los 36 meses. Al completar Ballenas, los niños se gradúan y pasan a la sede Vanguardia.</p>
           <dl class="ficha">
             <dt><svg class="ic" aria-hidden="true"><use href="#i-pin"></use></svg>Dirección</dt>
             <dd>Cra. 43c #18-47, Villavicencio</dd>
             <dt><svg class="ic" aria-hidden="true"><use href="#i-bebe"></use></svg>Ideal para</dt>
-            <dd>Bebés de 6 a 30 meses y familias que inician</dd>
+            <dd>Niños de 6 a 36 meses, de Caracoles a Ballenas</dd>
           </dl>
           <a class="enlace" href="https://www.google.com/maps/search/?api=1&query=Cra.+43c+%2318-47+Villavicencio" target="_blank" rel="noopener">Abrir en Google Maps</a>
         </article>
@@ -332,16 +436,80 @@
           <div class="sede__azulejo" aria-hidden="true"></div>
           <h3>Vanguardia</h3>
           <p class="sede__rol">Piscina cubierta y climatizada</p>
-          <p>Para continuar el proceso todo el año, sin importar el clima. Tiene techo, agua climatizada y zona amplia de parqueo.</p>
+          <p>Recibe a los graduados de Ballenas para continuar desde Delfín, seguido de Tiburón y Pingüino. Tiene techo, agua climatizada y zona amplia de parqueo.</p>
           <dl class="ficha">
             <dt><svg class="ic" aria-hidden="true"><use href="#i-pin"></use></svg>Sector</dt>
             <dd>Vanguardia, Villavicencio</dd>
             <dt><svg class="ic" aria-hidden="true"><use href="#i-ola"></use></svg>Ideal para</dt>
-            <dd>Niños desde 1 año, adultos y grupos de colegio</dd>
+            <dd>Niños desde los 3 años (Delfín, Tiburón y Pingüino), adultos y grupos de colegio</dd>
           </dl>
           <a class="enlace" href="https://www.google.com/maps/search/?api=1&query=Vanguardia+Villavicencio+piscina" target="_blank" rel="noopener">Abrir en Google Maps</a>
         </article>
       </div>
+    </div>
+  </section>
+
+  <!-- ══════════ TESTIMONIOS ══════════ -->
+  <section class="testimonios" id="testimonios">
+    <div class="caja">
+      <div class="seccion__cab">
+        <div>
+          <h2 class="titulo">Lo que dicen las familias.</h2>
+          <p class="bajada">Historias reales de papás, mamás y estudiantes en nuestras dos sedes.</p>
+        </div>
+        <div class="carrusel__controles">
+          <span class="desliza">Desliza <svg class="ic" aria-hidden="true"><use href="#i-flecha"></use></svg></span>
+          <button type="button" class="flecha" data-carrusel-prev="test" aria-label="Testimonio anterior"><svg class="ic" aria-hidden="true"><use href="#i-flecha"></use></svg></button>
+          <button type="button" class="flecha flecha--sig" data-carrusel-next="test" aria-label="Siguiente testimonio"><svg class="ic" aria-hidden="true"><use href="#i-flecha"></use></svg></button>
+        </div>
+      </div>
+
+      <div class="rejilla-test" id="carrusel-test">
+        <article class="test">
+          <div class="test__estrellas" aria-hidden="true">★★★★★</div>
+          <h3>Perdió el miedo en un mes</h3>
+          <p>“Mi hija lloraba con solo ver el agua. Con la paciencia de las profes en El Buque, hoy pide ir a la piscina. El cambio fue impresionante.”</p>
+          <p class="test__firma">— Mamá de Salomé, 2 años · sede El Buque</p>
+        </article>
+        <article class="test">
+          <div class="test__estrellas" aria-hidden="true">★★★★★</div>
+          <h3>Clases que no se cancelan por lluvia</h3>
+          <p>“Vivimos cerca de Vanguardia y lo que más valoramos es que la piscina es cubierta. Nunca hemos perdido una clase por el clima.”</p>
+          <p class="test__firma">— Papá de Juan Esteban, 5 años · sede Vanguardia</p>
+        </article>
+        <article class="test">
+          <div class="test__estrellas" aria-hidden="true">★★★★★</div>
+          <h3>Aprendí a nadar a los 34 años</h3>
+          <p>“Nunca aprendí de niño y me daba pena. Acá nadie te apura ni te juzga. En unos meses ya nadaba largos completos.”</p>
+          <p class="test__firma">— Estudiante adulto · sede Vanguardia</p>
+        </article>
+        <article class="test">
+          <div class="test__estrellas" aria-hidden="true">★★★★★</div>
+          <h3>Seguimiento real del avance</h3>
+          <p>“Nos explican en qué nivel va nuestro hijo y qué falta para el siguiente. Se nota que no es solo una clase más, es un proceso.”</p>
+          <p class="test__firma">— Mamá de Tomás, 6 años · sede Vanguardia</p>
+        </article>
+        <article class="test">
+          <div class="test__estrellas" aria-hidden="true">★★★★★</div>
+          <h3>Excelente experiencia inclusiva</h3>
+          <p>“Buscábamos un lugar con paciencia para nuestro hijo con autismo. Diyer entendió el proceso desde el primer día.”</p>
+          <p class="test__firma">— Mamá de Andrés, 8 años · sede Vanguardia</p>
+        </article>
+      </div>
+      <p class="nota nota--muestra">* Testimonios de muestra para ilustrar el diseño — reemplázalos por reseñas reales de tus estudiantes antes de publicar.</p>
+    </div>
+  </section>
+
+  <!-- ══════════ CTA DE CIERRE ══════════ -->
+  <section class="cierre">
+    <div class="cierre__fondo" aria-hidden="true"></div>
+    <div class="caja cierre__caja">
+      <p class="hashtag hashtag--claro">#NadaMásDivertido</p>
+      <h2 class="titulo titulo--claro">¿Qué esperas para empezar?<br>La aventura en el agua te espera.</h2>
+      <p class="bajada bajada--clara">Escríbenos hoy y te contamos en qué sede y horario hay cupo disponible.</p>
+      <a class="bt bt--wa" href="https://wa.me/573108731095?text=Hola%20Diyer%2C%20quiero%20empezar%20las%20clases%20de%20nataci%C3%B3n.%20%C2%BFQu%C3%A9%20cupos%20hay%3F" target="_blank" rel="noopener">
+        <svg class="ic" aria-hidden="true"><use href="#i-wa"></use></svg>Pedir cupo por WhatsApp
+      </a>
     </div>
   </section>
 
@@ -385,7 +553,7 @@
         </details>
         <details>
           <summary>¿Qué debe llevar mi hijo a la clase?</summary>
-          <p>Vestido de baño, gorro, toalla, sandalias y un cambio de ropa. Para bebés, pañal de agua. Las gafas se recomiendan desde el nivel de propulsión.</p>
+          <p>Vestido de baño, gorro, toalla, sandalias y un cambio de ropa. Para bebés, pañal de agua. Consulta con el profesor cuándo incorporar las gafas según el nivel.</p>
         </details>
         <details>
           <summary>¿La piscina es climatizada?</summary>
@@ -456,6 +624,7 @@
       <a href="#programas">Programas</a>
       <a href="#ruta">Niveles</a>
       <a href="#sedes">Sedes</a>
+      <a href="#testimonios">Testimonios</a>
       <a href="#tarifas">Tarifas</a>
       <a href="#faq">Preguntas</a>
     </nav>
