@@ -558,6 +558,8 @@ html[data-tema="noche"] .resultado .paso__p{color:var(--aqua)}
     linear-gradient(160deg,#0d5da8,var(--cian) 60%,var(--aqua));
   background-size:26px 26px,26px 26px,100% 100%;
 }
+.sede__foto{margin:0 clamp(-2.4rem,-3vw,-1.6rem) 1.6rem}
+.sede__foto img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain}
 .sede h3{font-size:clamp(1.6rem,1.3rem + 1vw,2.1rem)}
 .sede__rol{
   font-family:var(--display);font-weight:500;font-size:.95rem;
