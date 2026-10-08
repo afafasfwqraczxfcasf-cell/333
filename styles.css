@@ -424,6 +424,30 @@ html[data-tema="noche"] .etiqueta{color:var(--aqua)}
 .prog--destacado .enlace::after{display:none}
 html[data-tema="noche"] .enlace{color:var(--aqua)}
 
+.nosotros{background:var(--fondo-2)}
+.profesores{background:var(--fondo)}
+.institucional__rejilla{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.4rem;margin-top:2.5rem}
+.institucional__tarjeta,.profesor{padding:clamp(1.4rem,3vw,2rem);border:1px solid var(--borde);border-radius:var(--r-l);background:var(--tarjeta)}
+.institucional__tarjeta h3,.profesor h3{font-size:1.45rem;margin-bottom:.7rem}
+.institucional__tarjeta p,.institucional__tarjeta ul,.profesor p,.profesor ul{color:var(--tinta-2);line-height:1.65}
+.institucional__tarjeta ul,.profesor ul{padding-left:1.2rem}
+.institucional__tarjeta li+li,.profesor li+li{margin-top:.55rem}
+.institucional__historia .etiqueta{margin-bottom:1rem}
+.diferenciadores{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.4rem;margin-top:1.4rem}
+.diferenciadores article{padding:2rem;border-radius:var(--r-l);background:var(--diyer);color:white}
+.diferenciadores h3{font-size:1.3rem;margin:.8rem 0}
+.diferenciadores p{color:#c6e5f6;line-height:1.6}
+.diferenciadores__cifra{display:block;font-family:var(--display);font-size:3.5rem;line-height:1;color:var(--aqua)}
+.diferenciadores .ic{color:var(--aqua)}
+.profesores__nota{margin:1.5rem 0;padding:1rem 1.3rem;border:1px solid var(--borde);border-radius:var(--r-m);color:var(--tinta-2);line-height:1.6;max-width:85ch}
+.profesores__rejilla{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.4rem;margin-top:2rem}
+.profesor__avatar{width:80px;height:80px;border-radius:50%;display:grid;place-items:center;background:var(--diyer);color:var(--aqua);font-family:var(--display);font-size:1.8rem;margin-bottom:1rem}
+.profesor .etiqueta{margin-bottom:1rem}
+.profesor .profesor__especialidad{color:var(--cian);font-weight:600;margin-bottom:.6rem}
+.profesor ul{font-size:.9rem;margin-top:1rem}
+@media(max-width:1024px){.diferenciadores,.profesores__rejilla{grid-template-columns:1fr}}
+@media(max-width:640px){.institucional__rejilla{grid-template-columns:1fr}}
+
 /* ---------- 9. Ruta de niveles ---------- */
 .ruta{position:relative;isolation:isolate;overflow:hidden;color:#fff;background:var(--abismo)}
 html[data-tema="noche"] .ruta{background:#02152c}

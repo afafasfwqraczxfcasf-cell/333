@@ -109,18 +109,18 @@
 
     var programas = {
       bebe: {
-        t: 'Matronatación, en la sede El Buque',
-        d: 'De Caracoles a Ballenas, de 6 a 36 meses, en El Buque. El acompañamiento evoluciona con la autonomía del niño. Al completar Ballenas se gradúa y continúa desde Delfín en Vanguardia.',
-        m: 'Hola Diyer, tengo un bebé y me interesa la matronatación en la sede El Buque. ¿Qué horarios y cupos hay?'
+        t: 'Matronatación, en El Buque y Vanguardia',
+        d: 'Bebés de 4 a 36 meses en El Buque y Vanguardia, de Caracoles a Ballenas. Clases de 45 minutos y grupos de 6 niños por profesor. El Buque es exclusivo para bebés; al graduarse de Ballenas, continúan en Vanguardia.',
+        m: 'Hola Diyer, tengo un bebé y me interesa la matronatación. ¿Qué horarios y cupos hay en El Buque o Vanguardia?'
       },
       ninoMiedo: {
         t: 'Clases para niños, adaptación al agua',
-        d: 'El profesor orienta el ingreso según la edad y el manejo del agua. De Caracoles a Ballenas se cursa en El Buque; Delfín, Tiburón y Pingüino, en Vanguardia.',
+        d: 'El profesor orienta el ingreso según la edad y el manejo del agua. Bebés desde los 4 meses en ambas sedes; niños hasta los 10 años en Vanguardia. Clases de 45 minutos y grupos de 6 niños por profesor de 4 meses a 6 años.',
         m: 'Hola Diyer, mi hijo/a le tiene miedo al agua y quiero orientación sobre el nivel y la sede que le corresponden. ¿Qué horarios tienen?'
       },
       ninoAprender: {
         t: 'Clases para niños, ruta completa',
-        d: 'Diez niveles, desde Caracoles hasta Pingüino. Hasta Ballenas se aprende en El Buque; tras graduarse, se continúa desde Delfín en Vanguardia. Te orientamos según la edad y el avance.',
+        d: 'Diez niveles, desde Caracoles hasta Pingüino. El Buque atiende exclusivamente bebés de 4 a 36 meses; Vanguardia recibe bebés, niños hasta los 10 años y adultos. Todas las clases duran 45 minutos. De 4 meses a 6 años, los grupos son de 6 niños por profesor.',
         m: 'Hola Diyer, quiero que mi hijo/a aprenda a nadar. ¿Cómo hago para que lo evalúen y saber en qué nivel va?'
       },
       ninoTecnica: {
@@ -129,13 +129,13 @@
         m: 'Hola Diyer, mi hijo/a ya nada y quiero que mejore técnica y estilos. ¿Qué grupo le corresponde?'
       },
       adultoCero: {
-        t: 'Clases para adultos, desde cero',
-        d: 'Grupos pequeños para quien nunca aprendió. Se empieza por respiración y flotación, sin apuro y sin vergüenza.',
+        t: 'Clases para adultos en Vanguardia, desde cero',
+        d: 'Clases de 45 minutos en Vanguardia para quien nunca aprendió. Se empieza por respiración y flotación, a tu ritmo.',
         m: 'Hola Diyer, soy adulto y quiero aprender a nadar desde cero. ¿Qué horarios manejan?'
       },
       adultoTecnica: {
-        t: 'Clases para adultos, corrección de técnica',
-        d: 'Para quien ya nada pero quiere mejorar brazada, respiración bilateral y resistencia.',
+        t: 'Clases para adultos en Vanguardia, corrección de técnica',
+        d: 'Clases de 45 minutos en Vanguardia para quien ya nada y quiere mejorar brazada, respiración bilateral y resistencia.',
         m: 'Hola Diyer, ya nado y quiero corregir técnica y ganar resistencia. ¿Cómo son las clases para adultos?'
       },
       grupo: {
